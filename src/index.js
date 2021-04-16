@@ -3,6 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ReactGA from 'react-ga';
+import TagManager from 'react-gtm-module';
+ReactGA.initialize('UA-191822904-1');
+// ReactGA.pageview(window.location.pathname + window.location.search);
+
+TagManager.initialize({
+  gtmId: 'UA-191822904-1'
+})
 
 ReactDOM.render(
   <React.StrictMode>
